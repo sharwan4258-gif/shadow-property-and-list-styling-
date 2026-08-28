@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="shadow properties">
+    <title>shadow properties</title>
+    <style>
+        *{
+            overflow: auto;
+        }
+        .shadow
+
+        /* (shadow h-offset v-offset blur spread color inset ) */
+            {
+            border: 2px solid rgb(1, 12, 1);
+            padding: 34px;
+            box-shadow: 5px 15px 5px rgba(211, 9, 9, 0.385);
+        }
+
+        p {
+            text-shadow: 10px 10px 10px rgb(16, 226, 93);
+            outline: 2px solid green;
+            border: 2px solid black;
+            /* the different btw the border and outline is that the boarder is fix and take box model space but outline is not fix not take space in box model we can ajust outline by using outline offset property and outline follow boarder property means if we set radius on vorder then radius will set on outline also  */
+            outline-offset: 50px;
+            border-radius: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="shadow">
+        i am a box
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis maxime vero aperiam sit corrupti voluptatem fugit
+        ea, quo doloremque delectus cumque distinctio minima libero!</p>
+</body>
+
+</html>
